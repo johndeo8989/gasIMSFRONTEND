@@ -1,0 +1,209 @@
+
+/* Container */
+.profile-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: calc(100vh - 55px);
+  }
+  
+  /* Card */
+  .profile-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* Profile Image */
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 6px solid white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+  }
+  
+  /* Info Section */
+  .profile-info {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .profile-row {
+    margin-bottom: 10px;
+    color: #808080;
+  }
+  
+  .profile-row .label {
+    font-weight: bold;
+  }
+  .profile-row .val{
+    color: black;
+  }
+  /* Buttons */
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .logout-btn {
+    font-weight: 600;
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    padding: 6px 16px;
+    background-color: #d6d6fb;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;
+    color: #00006b;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .edit-btn:hover {
+    background-color:#c4c4fd;
+  }
+  
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  }
+  .modal h2{
+    margin-bottom: 10px;
+  }
+  /* Form */
+  .edit-form .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .input-group input:focus{
+    border: 2px solid #00006b;
+  }
+  /* Buttons inside Modal */
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancel-btn,
+  .save-btn {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background: #e5e7eb;
+  }
+  
+  .save-btn {
+    background: #00006b;
+    color: white;
+  }
+  .file-upload-container {
+     width: 100%;
+  }
+  
+  .upload-label {
+    display: inline-block;
+    background-color: #6366f1; /* Indigo */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .upload-label:hover {
+    background-color: #4f46e5;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 6px;
+    color: #00006b;
+  }
+  
+  

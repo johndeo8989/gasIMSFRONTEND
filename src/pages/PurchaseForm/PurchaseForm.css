@@ -1,0 +1,176 @@
+.form1, .form2{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+.form1 .img-groups, .form2 .img-groups{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.form1 .img-groups input{
+    display: none;
+}
+.form1 .img-groups img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.form1 .img-groups label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    background-color: #c6ffd5;
+    border: 1px solid #3fec8d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form1 .input-groups, .form2 .input-groups{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.form1 .input-groups label, .form2 .input-groups label{
+    font-weight: 500;
+    color: #333;
+}
+.form1 .input-groups input, .form2 .input-groups input, .form2 .input-groups select{
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: white;
+}
+.form1 .input-groups input:focus, .form2 .input-groups input:focus, .form2 .input-groups select:focus{
+    border: 2px solid #00006b;
+    outline: none;
+}
+.form1 .input-groups .custom-select-list{
+    top: 75px;
+}
+.addpurchase{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.addpurchase button{
+    padding: 10px 20px;
+    background-color: #00006b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.payment{
+    display: flex;
+    align-items: end;
+    margin: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.payment .payment-mode{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.payment .payment-mode .cash, .payment-mode .cheque, .payment-mode .card, .payment-mode .upi{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.payment .payment-mode .cash input, .cheque input, .payment-mode .card input, .payment-mode .upi input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    color: #00006b;
+}
+.payment .payment-ref{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.payment .payment-ref input{
+    width: 400px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: white;
+}
+.payment .payment-ref input:focus{
+    border: 2px solid #00006b;
+    outline: none;
+}
+.payment  button{
+    padding: 10px 20px;
+    background-color: #00006b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.addpurchse-table th, .addpurchse-table td{
+    padding: 8px;
+    text-align: center;
+}
+.addpurchse-table {
+    width: 100%;
+    border: none;
+}
+
+.addpurchse-table thead {
+    background-color: #dadaff;
+}
+
+.addpurchse-table th,
+.addpurchse-table td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+ }
+
+ .addpurchse-table tbody tr:nth-child(even) {
+    background-color: #e9eeff;
+}
+
+.addpurchse-table tbody tr:hover {
+    background-color: #f5f6ff;
+}
+
+.delete-purchase-product{
+    font-size: 20px;
+    color: red;
+}
+.delete-purchase-product .del-product{
+    cursor: pointer;
+}
+@media (max-width: 1481px){
+    .form1, .form2{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media (max-width: 450px){
+    .back_title h3{
+       display: none;
+    }
+    .payment .payment-mode .cash, .payment-mode .cheque, .payment-mode .card, .payment-mode .upi{
+        gap: 6px;
+    }
+        
+    .payment .payment-ref{
+        width: 100%;
+    }
+    .payment .payment-ref input{
+        width: 100%;
+    }
+}

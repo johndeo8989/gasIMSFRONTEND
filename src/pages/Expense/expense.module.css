@@ -1,0 +1,386 @@
+.overviewcontainer,
+.over-view-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overviewcontainer button {
+  padding: 0.5rem 0.8rem;
+  background: #eaeaea;
+  border: 0.85px solid #bdbdbd;
+  border-radius: 6.76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  align-items: center;
+  width: 12%;
+}
+.right p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.left input {
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.search_bar {
+  padding: 0 0.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c1bdbd;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.search_bar input {
+  background-color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+.search_bar input::placeholder {
+  color: black;
+}
+.date {
+  border: 1px solid #c1bdbd;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+.recentadded {
+  padding: 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recentadded span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.filterarea {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.expenseFormContainer {
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 111;
+}
+
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  color: #545454;
+}
+.card_container div {
+  background-color: white;
+  padding: 1rem;
+  width: 15.5rem;
+  height: 8rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 1px solid #cbcbcb;
+  justify-content: center;
+}
+.card_container div:first-child {
+  background-color: #00006b;
+  color: white;
+}
+.card_container div:first-child b {
+  color: #67ed01;
+}
+.card_container div p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card_container div p span {
+  font-size: 1.5rem;
+}
+.card_container div i {
+  color: #67ed01;
+  font-size: 10px;
+  margin-top: 8px;
+}
+
+.AddContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AddContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AddContainer img:nth-child(1) {
+  width: 30px;
+}
+.AddContainer button {
+  background-color: #d6d6fb;
+  height: 44px;
+  border: none;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #cbcbcb;
+  margin-top: 1rem;
+  color: #545454;
+  background-color: #fff;
+}
+.td,
+.th {
+  text-align: left;
+  padding: 1.2rem;
+  cursor: pointer;
+  min-width: 100px;
+}
+.td:nth-child(1),
+.td:last-child,
+.th:last-child,
+.th:nth-child(1) {
+  max-width: 65px;
+  min-width: 65px;
+}
+.th {
+  color: #00006b;
+  background-color: #dadaff;
+}
+.tr {
+  border: 1px solid #dddddd;
+  background-color: #fff;
+}
+.tablebottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border: 1px solid #dddddd;
+}
+.tablebottom button {
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dddddd;
+  gap: 0.5rem;
+  background-color: #fff;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination b {
+  margin: 1rem;
+}
+.active {
+  background-color: #dadaff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+/* Small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  .overviewcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .search_bar {
+    flex: 1;
+  }
+  .search_bar input {
+    width: 100%;
+  }
+  .recentadded {
+    font-size: 12px;
+  }
+  .card_container {
+    background-color: white;
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    padding: .8rem;
+    margin-top: 1.2rem;
+    color: #545454;
+    flex-wrap: wrap;
+    height: 30vh;
+  }
+  .card_container div {
+    background-color: #f6f6f6;
+    padding: 1rem;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 1px solid #cbcbcb;
+    justify-content: center;
+  }
+  .card_container div {
+    padding: 0.8rem;
+    width: 6.8rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .AddContainer {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .AddContainer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .AddContainer button {
+    background-color: #d6d6fb;
+    height: 40px;
+    min-width: 120px;
+    border: none;
+    font-weight: 500;
+  }
+  .tableContainer {
+    overflow: scroll;
+    width: 100%;
+  }
+  .tableContainer td,
+  .th {
+    text-align: left;
+    padding: 1.2rem;
+    min-width: 130px;
+    font-size: 10px;
+  }
+
+  .tableContainer td:nth-child(1),
+  .th:nth-child(1),
+  .tableContainer td:last-child,
+  .th:last-child {
+    min-width: 10px;
+    max-width: 70px;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  /* Add your styles for tablets here */
+}
+
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  /* Add your styles for small desktops here */
+}
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
+  /* Add your styles for large desktops here */
+}
+
+/* Custom large screen (1400px and down) - already existed */
+@media (max-width: 1400px) {
+  /* Your optimized 1400px responsive styles (already done) */
+  .card_container div {
+    padding: .6rem;
+    min-width: 9rem;
+    min-height: 5rem;
+  }
+}
+
+/* Responsive */
+@media (min-width: 800px) and (max-width: 1400px) {
+  .overviewcontainer button,
+  .over-view-container button {
+    padding: 0.5rem 0.6rem;
+    margin-right: 1rem;
+  }
+
+  .right p {
+    font-size: 1rem;
+  }
+  .left input {
+    padding: 0.4rem;
+  }
+  .card_container {
+    padding: 0.5rem;
+    margin-top: 0.8rem;
+  }
+  .card_container div {
+    padding: 0.8rem;
+    width: 6.8rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .card_container div:first-child b,
+  .card_container div b {
+    font-size: 0.8rem;
+  }
+  .card_container div p span {
+    font-size: 1.2rem;
+  }
+  .card_container div i {
+    font-size: 0.5rem;
+  }
+  .AddContainer {
+    margin-top: 1rem;
+  }
+
+  .AddContainer button {
+    height: 2.5rem;
+  }
+  .td,
+  .th {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+}

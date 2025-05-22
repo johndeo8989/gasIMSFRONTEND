@@ -1,0 +1,49 @@
+.page-body{
+    display: flex;
+}
+.page-body .main{
+    flex: 1;
+    height: calc(100vh - 55px);
+    overflow-y: auto;
+    background-color: #f3f3f3;
+    padding: 0 20px;
+}
+.layout .mobile-sidebar {
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    left: -210px;
+    background-color: white;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+.layout .mobile-sidebar .close{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: end;
+    height: 55px;
+    background-color: white;
+    color: rgb(63, 63, 63);
+}
+.layout .mobile-sidebar .sidebar{
+    width: 210px;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px){
+    .layout .mobile-sidebar{
+        display: block;
+    }
+    .layout .page-body .sidebar{
+        display: none;
+    }
+    
+}
+@media (max-width: 480px) {
+    .main {
+        padding: 0;
+        background-color: #eaeaea;
+    }
+}

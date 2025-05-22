@@ -1,0 +1,21 @@
+.add-hsn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #dadaff;
+    color:  #00006b;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-hsn span{
+ font-size: 20px;
+} 
+
+@media (max-width: 768px){
+    .add-hsn{
+      padding: 5px 12px;
+    }
+ }

@@ -1,0 +1,68 @@
+aside {
+  background: #fcfcfc;
+  width: 290px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 5px;
+}
+
+aside p {
+  color: #00006b;
+  font-size: 1.2rem;
+}
+aside a {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #cdcdcd;
+  border-radius: 0.4rem;
+  color: #545454;
+  text-align: start;
+}
+
+@media (max-width: 1400px) {
+  aside {
+    padding: 1rem;
+    gap: 0.8rem;
+  }
+
+  aside p {
+    color: #00006b;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  aside button {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #cdcdcd;
+    border-radius: 0.4rem;
+    background: #f4f4f4;
+    color: #545454;
+    text-align: start;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 900px) {
+  aside {
+    background: #fcfcfc;
+    width: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+
+  aside p {
+    color: #00006b;
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  aside a {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #cdcdcd;
+    border-radius: 0.4rem;
+    color: #545454;
+    text-align: start;
+  }
+}

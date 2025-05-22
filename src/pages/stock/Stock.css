@@ -1,0 +1,32 @@
+.icon-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.icon-btn.green {
+  color: green;
+}
+
+.icon-btn.red {
+  color: red;
+}
+
+.addstock {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #dadaff;
+  color: #00006b;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loading-text {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}

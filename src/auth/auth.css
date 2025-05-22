@@ -1,0 +1,102 @@
+/* General Reset */
+
+/* Container */
+.authContainer {
+  width: 100vw;
+  padding: 20px;
+  background: linear-gradient(13.63deg, #de333f -117.52%, #00006b 112.38%);
+  overflow: hidden;
+}
+
+.authheader {
+  width: 100%;
+}
+
+.formCont {
+  max-width: 420px;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+}
+
+/* Form Styling */
+.authForm {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.authheader {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.authheader p {
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 0;
+  color: white;
+}
+
+.authheader h2 {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.authheader a {
+  color: #3377de;
+}
+
+.authForm input[type="text"],
+.authForm input[type="password"],
+.authForm input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid white;
+  color: white;
+  border-radius: 7px;
+  margin-bottom: 32px;
+  outline: none;
+}
+
+.authForm input::placeholder {
+  color: white;
+  opacity: 1;
+  /* For Firefox */
+}
+
+.authForm button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00006b;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.authForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Link Styling */
+.authForm a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.authForm a:hover {
+  text-decoration: underline;
+}
+
+.gasimage {
+  z-index: 0;
+}
